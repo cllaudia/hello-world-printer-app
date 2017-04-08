@@ -21,6 +21,7 @@ docker_run: docker_build
 	-d hello-world-printer
 
 USERNAME=cllaudia
+DOCKER_PASSWORD=klaudia1
 TAG=$(USRERNAME)/hello-world-printer
 
 docker_push:
