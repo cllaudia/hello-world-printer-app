@@ -1,5 +1,8 @@
 .PHONY: test deps
 
+run_gunicorn:
+	PYTHONPATH=$$PYTHONPATH:$$(pwd) gunicorn hello_world:app
+
 deps:
 	pip install -r requirements.txt; \
 	pip install -r test_requirements.txt
